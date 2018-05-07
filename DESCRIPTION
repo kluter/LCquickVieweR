@@ -11,12 +11,6 @@ LazyData: true
 Imports:
 	raster, 
 	sp, 
-	ggplot2, 
 	RStoolbox, 
 	rgdal, 
-	randomForest, 
-	cluster, 
-	e1071, 
-	lattice, 
-	caret
 URL:
