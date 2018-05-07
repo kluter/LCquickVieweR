@@ -7,7 +7,7 @@ backslashConverter()
 # then input string.
 }
 \description{
-Since \backslash is a special operator to suppress metacharacters or escape sequences, it can’t be escaped without a second backslash.
+Since backslash is a special operator to suppress metacharacters or escape sequences, it can’t be escaped without a second backslash.
 This function formats every backslash into a forwardslash.
 
 Usefull for pasting win-directories.
