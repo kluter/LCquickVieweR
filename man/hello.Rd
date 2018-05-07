@@ -1,0 +1,12 @@
+\name{hello}
+\alias{hello}
+\title{hello}
+\usage{
+hello
+}
+\description{
+hello
+}
+\examples{
+hello
+}

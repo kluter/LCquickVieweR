@@ -1,0 +1,22 @@
+Package: LCquickVieweR
+Type: Package
+Title: LULC Detection through False Color Images
+Version: 0.0.1
+Date: 2018-05-7
+Author: Pawel Kluter
+Description: Provides preprocessing functions (and more) to create false color images, making LULC (that is coded by color) visible.
+License:
+Encoding: UTF-8
+LazyData: true
+Imports:
+	raster, 
+	sp, 
+	ggplot2, 
+	RStoolbox, 
+	rgdal, 
+	randomForest, 
+	cluster, 
+	e1071, 
+	lattice, 
+	caret
+URL:
