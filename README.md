@@ -17,20 +17,20 @@ devtools::install_github("kluter/LCquickVieweR")
 `LCquickVieweR` provides a small set of functions, namely:
 
 Adjusting study area:
-* `mergeThis()` - [0.0.1] Merges two tiles into a single image for every dataset in a committed directory. 
+* `mergeThis()` - [0.0.1] merges two tiles into a single image for every dataset in a committed directory. 
 Including more tiles is possible by adjusting the referenced `raster::mosaic()` function.
-* `subsetThis()` - Crops every raster image in a committed directory to the extend of any shapefile.
+* `subsetThis()` - crops every raster image in a committed directory to the extend of any shapefile.
 
 Image Differencing and Multi Temporal Stacking using NDVI:
-* `getNDVI()` - Computes the NDVI for every Landsat5 and Landsat8 scene in a committed directory.
-    - `NDVI()` - Basic ratio computation using Red & NIR bands, see [NDVI](https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index). 
-    - `Landsat5_NDVI()` - Looks for the right Landsat5 bands for NDVI computation.
-    - `Landsat8_NDVI()` - Looks for the right Landsat8 bands for NDVI computation.
-* `getDeltaNDVI()` - Creates image subtractions of every successive pair within a directory. The order of subtractions is the order of the committed directory.
-    - `deltaNDVI()` - Raster calculation: `deltaNDVI()` subtracts NDVI datasets from each other. The prior dataset is subtracted from the later.
-* `stackTime()` - Creates the final product by stacking the prior, later, and delta datasets into their respective RGB channels.
+* `getNDVI()` - computes the NDVI for every Landsat5 and Landsat8 scene in a committed directory.
+    - `NDVI()` - basic ratio computation using Red & NIR bands, see [NDVI](https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index). 
+    - `Landsat5_NDVI()` - looks for the right Landsat5 bands for NDVI computation.
+    - `Landsat8_NDVI()` - looks for the right Landsat8 bands for NDVI computation.
+* `getDeltaNDVI()` - creates image subtractions of every successive pair within a directory. The order of subtractions is the order of the committed directory.
+    - `deltaNDVI()` - raster calculation: `deltaNDVI()` subtracts NDVI datasets from each other. The prior dataset is subtracted from the later.
+* `stackTime()` - creates the final product by stacking the prior, later, and delta datasets into their respective RGB channels.
 
-Bonus - Functions that make RStudio life easier:
+Bonus functions that make RStudio life easier:
 
 -   `packageChecker()`
 -   `backslashConverter()`
