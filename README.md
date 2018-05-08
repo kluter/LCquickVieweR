@@ -2,7 +2,7 @@ LCquickVieweR
 ---
 The R package `LCquickVieweR` makes land-use change visible by creating false color images. 
 The methodical approach is a combination of Image Differencing and Multi Temporal Stacking using NDVI.
-This way change is coded by color. All preprocessing steps are automatized.
+This way change is coded by color. All processing steps are automatized.
 
 In this stage [0.0.1] the functions are customized for my latest project, but can be adjusted easily.
 `LCquickVieweR` was built during my remote sensing major at University Würzburg.
