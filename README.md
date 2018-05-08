@@ -8,7 +8,7 @@ At this stage [0.0.1] some functions are customized for my latest project, but c
 `LCquickVieweR` was built during my remote sensing major at University Würzburg.
 
 <p align="center"><img width="50%" src="https://raw.githubusercontent.com/kluter/img/master/result1.gif"></p>
-<p align="center"><sub>Animation1: LCquickVieweR final product.</sub></p>
+<p align="center"><sub>Animation 1: LCquickVieweR final product.</sub></p>
 
 
 ## Installation
@@ -118,4 +118,4 @@ Once the processing is done, your results will look pretty much like the scenes 
 * yellowish and purple areas: areas without change (color depends on NDVI intensity in both dates)
 
 <p align="center"><img width="50%" src="https://raw.githubusercontent.com/kluter/img/master/result2.gif"></p>
-<p align="center"><sub>Animation1: LCquickVieweR final product.</sub></p>
+<p align="center"><sub>Animation 2: LCquickVieweR final product.</sub></p>
