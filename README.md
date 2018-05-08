@@ -64,7 +64,11 @@ Main program:
 ``` r
 # creating NDVIs for all downloaded data
 getNDVI(dirList)
-
+```
+<p align="center"><img width="40%" src="https://raw.githubusercontent.com/kluter/img/master/img1.png"></p>
+<p align="center"><sub>Figure 1: Converting all datasets into NDVI datasets.</sub></p>
+<br>
+``` r
 #--------------------------------------------------------------------------------#
 # filtering for needed tiles
 imageTile1 <- list.files("result_NDVIs/", pattern = "177044")
