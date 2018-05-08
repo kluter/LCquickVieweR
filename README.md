@@ -16,7 +16,6 @@ devtools::install_github("kluter/LCquickVieweR")
 ## Functions
 `LCquickVieweR` provides a small set of functions, namely:
 
-
 * `mergeThis()` - [0.0.1] Merges two tiles into a single image for every dataset in a committed directory. 
 Including more tiles is possible by adjusting the referenced `raster::mosaic()` function.
 * `subsetThis()` - Crops every raster image in a committed directory to the extend of any shapefile.
@@ -26,11 +25,10 @@ Including more tiles is possible by adjusting the referenced `raster::mosaic()` 
     - `Landsat8_NDVI()` - Looks for the right Landsat8 bands for NDVI computation.
 * `getDeltaNDVI()` - Creates image subtractions of every successive pair within a directory. The order of subtractions is the order of the committed directory.
     - `deltaNDVI()` - Raster calculation: `deltaNDVI()` subtracts NDVI datasets from each other. The prior dataset is subtracted from the later.
-* `stackTime()`
+* `stackTime()` - Creates the final product by stacking the prior, later, and delta datasets into their respective RGB channels.
+
+Bonus - Functions that make RStudio life easier:
 
 -   `packageChecker()`
--   
--   
-
 -   `backslashConverter()`
 -   `set.wd()`
