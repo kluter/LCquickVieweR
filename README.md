@@ -64,7 +64,7 @@ Main program:
 # creating NDVIs for all downloaded data
 getNDVI(dirList)
 
-#---------------------------------------------------------------------------------------------------------------------#
+#--------------------------------------------------------------------------------#
 
 # filtering for needed tiles
 imageTile1 <- list.files("result_NDVIs/", pattern = "177044")
@@ -73,7 +73,7 @@ imageTile2 <- list.files("result_NDVIs/", pattern = "177045")
 # combining tiles for full study area
 mergeThis(imageTile1, imageTile2)
 
-#---------------------------------------------------------------------------------------------------------------------#
+#--------------------------------------------------------------------------------#
 # loading extent of study area -> shp-file
 studyArea <- readOGR(dsn = "_vector_data", layer = "studyArea")
 # addressing all merged images
@@ -82,14 +82,14 @@ allMosaics <- list.files("result_mosaic/")
 # creating subset from all mosaics
 subsetThis(allMosaics, studyArea)
 
-#---------------------------------------------------------------------------------------------------------------------#
+#--------------------------------------------------------------------------------#
 # getting all subsets into a list
 allSubsets <- list.files("result_subset/")
 
 # image differencing deltaNDVI()
 getDeltaNDVI(allSubsets)
 
-#---------------------------------------------------------------------------------------------------------------------#
+#--------------------------------------------------------------------------------#
 # collecting preprocessed datasets for final product
 delta <- list.files("result_deltaNDVIs/")
 ndvi <- list.files("result_subset/")
