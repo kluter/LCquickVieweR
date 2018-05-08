@@ -16,8 +16,8 @@ devtools::install_github("kluter/LCquickVieweR")
 ## Functions
 This R package provides a small set of functions, namely:
 
--   `deltaNDVI()`
--   `getDeltaNDVI()`
+* `deltaNDVI()`
+* `getDeltaNDVI()`
 -   `getNDVI()`
 -   `Landsat5_NDVI()`
 -   `Landsat8_NDVI()`
