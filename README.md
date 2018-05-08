@@ -32,7 +32,7 @@ Image Differencing and Multi Temporal Stacking using NDVI:
 
 Bonus functions that make RStudio life easier:
 
-* `packageChecker()`
-* `set.wd()`
-    - `backslashConverter()`
+* `packageChecker()` - takes a list of packageNames and checks it against the internal library. If a package is missing, it will download, install and activate it. If a package is already installed but old, it will be updated and activated. If a package is already installed, it will be activated.
+* `set.wd()`- setting a working directory by pasting a windows path directly, without changing any single \backslash.
+    - `backslashConverter()` - converts \ into /.
 
