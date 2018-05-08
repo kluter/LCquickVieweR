@@ -115,7 +115,9 @@ Once the processing is done, your results will look pretty much like the scenes 
 
 * reddish colors: lost areas
 * cyan colors: gained areas
-* yellowish and purple areas: areas without change (color depends on NDVI intensity in both dates)
+* yellowish and purple areas: areas without change 
+
+In general color depends on NDVI intensity in both dates.
 
 <p align="center"><img width="50%" src="https://raw.githubusercontent.com/kluter/img/master/result2.gif"></p>
 <p align="center"><sub>Animation 2: LCquickVieweR final product.</sub></p>
