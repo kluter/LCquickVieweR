@@ -85,6 +85,8 @@ allMosaics <- list.files("result_mosaic/")
 # creating subset from all mosaics
 subsetThis(allMosaics, studyArea)
 ```
+<p align="center"><img width="50%" src="https://raw.githubusercontent.com/kluter/img/master/img2.png"></p>
+<p align="center"><sub>Figure 2: Merged and cropped study area.</sub></p>
 
 ``` r
 # getting all subsets into a list
