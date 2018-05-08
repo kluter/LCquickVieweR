@@ -39,6 +39,9 @@ Bonus functions that make RStudio life easier:
 ## Get Started
 A quick demonstration of what `LCquickVieweR` can do:
 
+Put all your downloaded satellite images into one folder. Up to this point the automatization works only for Landsat 5 and 8 scenes. Bands from other satellites need to be addressed manually.
+
+Presetting:
 ``` r
 # Load packages
 packages <- c("raster", "sp", "RStoolbox", "rgdal")
