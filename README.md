@@ -66,7 +66,6 @@ Main program:
 getNDVI(dirList)
 
 #--------------------------------------------------------------------------------#
-
 # filtering for needed tiles
 imageTile1 <- list.files("result_NDVIs/", pattern = "177044")
 imageTile2 <- list.files("result_NDVIs/", pattern = "177045")
@@ -95,6 +94,6 @@ getDeltaNDVI(allSubsets)
 delta <- list.files("result_deltaNDVIs/")
 ndvi <- list.files("result_subset/")
 
-# creating main LULC product
+# creating main Land-use change product
 stackTime(ndvi, delta)
 ```
