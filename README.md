@@ -14,7 +14,7 @@ devtools::install_github("kluter/LCquickVieweR")
 ```
 
 ## Functions
-`LCquickVieweR` provides a small set of functions, namely:
+`LCquickVieweR` provides a small set of functions:
 
 Adjusting study area:
 * `mergeThis()` - [0.0.1] merges two tiles into a single image for every dataset in a committed directory. 
@@ -32,6 +32,7 @@ Image Differencing and Multi Temporal Stacking using NDVI:
 
 Bonus functions that make RStudio life easier:
 
--   `packageChecker()`
--   `backslashConverter()`
--   `set.wd()`
+* `packageChecker()`
+* `set.wd()`
+    - `backslashConverter()`
+
