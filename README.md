@@ -16,10 +16,10 @@ devtools::install_github("kluter/LCquickVieweR")
 ## Functions
 `LCquickVieweR` provides a small set of functions, namely:
 
-* `NDVI()` – basic ratio computation using Red & NIR bands, see [NDVI](https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index).
-* `Landsat5_NDVI()` – finds the right Landsat5 bands for NDVI computation.
-* `Landsat8_NDVI()` – finds the right Landsat8 bands for NDVI computation.
-* `getNDVI()` –  processes a directory of Landsat5 and/or Landsat8 scenes by choosing the right bands and computing the NDVI for every image
+* `NDVI()` - basic ratio computation using Red & NIR bands, see [NDVI](https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index).
+* `Landsat5_NDVI()` - finds the right Landsat5 bands for NDVI computation.
+* `Landsat8_NDVI()` - finds the right Landsat8 bands for NDVI computation.
+* `getNDVI()` - processes a directory of Landsat5 and/or Landsat8 scenes by choosing the right bands and computing the NDVI for every image
 
 * `deltaNDVI()` – 
 * `getDeltaNDVI()`
