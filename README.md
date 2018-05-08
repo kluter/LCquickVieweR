@@ -16,9 +16,12 @@ devtools::install_github("kluter/LCquickVieweR")
 ## Functions
 `LCquickVieweR` provides a small set of functions, namely:
 
+Adjusting study area:
 * `mergeThis()` - [0.0.1] Merges two tiles into a single image for every dataset in a committed directory. 
 Including more tiles is possible by adjusting the referenced `raster::mosaic()` function.
 * `subsetThis()` - Crops every raster image in a committed directory to the extend of any shapefile.
+
+Image Differencing and Multi Temporal Stacking using NDVI:
 * `getNDVI()` - Computes the NDVI for every Landsat5 and Landsat8 scene in a committed directory.
     - `NDVI()` - Basic ratio computation using Red & NIR bands, see [NDVI](https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index). 
     - `Landsat5_NDVI()` - Looks for the right Landsat5 bands for NDVI computation.
