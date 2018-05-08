@@ -37,7 +37,7 @@ Bonus functions that make RStudio life easier:
     - `backslashConverter()` - converts \ into /.
 
 ## Get Started
-These code snippets show you one possible way to apply `LCquickVieweR`.
+A quick demonstration of what `LCquickVieweR` can do:
 
 ``` r
 packages <- c("raster", "sp", "RStoolbox", "rgdal")
