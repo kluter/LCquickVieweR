@@ -40,6 +40,15 @@ Bonus functions that make RStudio life easier:
 A quick demonstration of what `LCquickVieweR` can do:
 
 ``` r
+# Load packages
 packages <- c("raster", "sp", "RStoolbox", "rgdal")
-packageChecker(packages)
+LCquickVieweR::packageChecker(packages)
+
+# set your working directory to your sat-image folder
+set.wd()
+
+# create subfolders for temporal datasets
+directories <- c("result_NDVIs", "result_mosaic", "result_subset", "result_deltaNDVIs", "result_falseColor")
+for(i in 1:length(directories)){
+  dir.create(directories[i])
 ```
