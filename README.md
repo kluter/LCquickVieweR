@@ -7,6 +7,10 @@ This way change is coded by color. All processing steps are automatized.
 At this stage [0.0.1] some functions are customized for my latest project, but can be adjusted easily.
 `LCquickVieweR` was built during my remote sensing major at University Würzburg.
 
+<p align="center"><img width="100%" src="https://raw.githubusercontent.com/kluter/img/master/result1.gif"></p>
+<p align="center"><sub>Animation1: LCquickVieweR final product.</sub></p>
+
+
 ## Installation
 Install `LCquickVieweR` directly from github by using `devtools`.
 ``` r
@@ -105,3 +109,13 @@ stackTime(ndvi, delta)
 ```
 <p align="center"><img width="70%" src="https://raw.githubusercontent.com/kluter/img/master/img3.1.png"></p>
 <p align="center"><sub>Figure 3: Assembling the final product.</sub></p>
+
+## colorCode
+Once the processing is done, your results will look pretty much like the scenes in the GIFs. Regardless of where that scene is from, the color Code will still be the same:
+
+* reddish colors: lost areas
+* cyan colors: gained areas
+* yellowish and purple areas: areas without change (color depends on NDVI intensity in both dates)
+
+<p align="center"><img width="100%" src="https://raw.githubusercontent.com/kluter/img/master/result2.gif"></p>
+<p align="center"><sub>Animation1: LCquickVieweR final product.</sub></p>
