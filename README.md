@@ -104,14 +104,14 @@ getDeltaNDVI(allSubsets)
 delta <- list.files("result_deltaNDVIs/")
 ndvi <- list.files("result_subset/")
 
-# creating main Land-use change product
+# creating main land-use change product
 stackTime(ndvi, delta)
 ```
 <p align="center"><img width="60%" src="https://raw.githubusercontent.com/kluter/img/master/img3.1.png"></p>
 <p align="center"><sub>Figure 3: Assembling the final product.</sub></p>
 
 ## colorCode
-Once the processing is done, your results will look pretty much like the scenes in the GIFs. Regardless of where that scene is from, the color Code will still be the same:
+Once the processing is done, your results will look pretty much like the scenes in the GIFs. Regardless of where that scene is from, the colorCode will still be the same:
 
 * reddish colors: lost areas
 * cyan colors: gained areas
