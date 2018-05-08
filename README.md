@@ -14,15 +14,19 @@ devtools::install_github("kluter/LCquickVieweR")
 ```
 
 ## Functions
-This R package provides a small set of functions, namely:
+`LCquickVieweR` provides a small set of functions, namely:
 
-* `deltaNDVI()`
+* `NDVI()` – basic ratio computation using Red & NIR bands, see [NDVI](https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index).
+* `Landsat5_NDVI()`
+* `Landsat8_NDVI()` –
+
+* `getNDVI()` –  takes a list of Landsat(5/8) scenes in a directory 
+
+* `deltaNDVI()` – 
 * `getDeltaNDVI()`
--   `getNDVI()`
--   `Landsat5_NDVI()`
--   `Landsat8_NDVI()`
+
 -   `mergeThis()`
--   `NDVI()`
+
 -   `packageChecker()`
 -   `packageChecker()`
 -   `stackTime()`
