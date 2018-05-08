@@ -16,6 +16,9 @@ devtools::install_github("kluter/LCquickVieweR")
 ## Functions
 `LCquickVieweR` provides a small set of functions, namely:
 
+* `product`: A data product offered by a specific service, consisting of multiple datasets over a period of time and a wide spatial extent. Might be differentiated by:
+    - `platform`: A general platform design (e.g. "Landsat" or "Sentinel").
+
 * `getNDVI()` - computes the NDVI for every Landsat5 and Landsat8 scene in a committed directory.
    – `NDVI()` - basic ratio computation using Red & NIR bands, see [NDVI](https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index). 
    – `Landsat5_NDVI()` - finds the right Landsat5 bands for NDVI computation.
