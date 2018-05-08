@@ -51,4 +51,7 @@ set.wd()
 directories <- c("result_NDVIs", "result_mosaic", "result_subset", "result_deltaNDVIs", "result_falseColor")
 for(i in 1:length(directories)){
   dir.create(directories[i])
+  
+# create the main list of your working directory
+dirList <- list.files()
 ```
