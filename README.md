@@ -7,7 +7,7 @@ This way change is coded by color. All processing steps are automatized.
 At this stage [0.0.1] some functions are customized for my latest project, but can be adjusted easily.
 `LCquickVieweR` was built during my remote sensing major at University Würzburg.
 
-<p align="center"><img width="100%" src="https://raw.githubusercontent.com/kluter/img/master/result1.gif"></p>
+<p align="center"><img width="60%" src="https://raw.githubusercontent.com/kluter/img/master/result1.gif"></p>
 <p align="center"><sub>Animation1: LCquickVieweR final product.</sub></p>
 
 
@@ -117,5 +117,5 @@ Once the processing is done, your results will look pretty much like the scenes 
 * cyan colors: gained areas
 * yellowish and purple areas: areas without change (color depends on NDVI intensity in both dates)
 
-<p align="center"><img width="100%" src="https://raw.githubusercontent.com/kluter/img/master/result2.gif"></p>
+<p align="center"><img width="60%" src="https://raw.githubusercontent.com/kluter/img/master/result2.gif"></p>
 <p align="center"><sub>Animation1: LCquickVieweR final product.</sub></p>
