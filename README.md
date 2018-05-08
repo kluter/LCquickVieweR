@@ -36,3 +36,10 @@ Bonus functions that make RStudio life easier:
 * `set.wd()`- setting a working directory by pasting a windows path directly, without changing any single \backslash.
     - `backslashConverter()` - converts \ into /.
 
+## Get Started
+These code snippets show you one possible way to apply `LCquickVieweR`.
+
+``` r
+packages <- c("raster", "sp", "RStoolbox", "rgdal")
+packageChecker(packages)
+```
