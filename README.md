@@ -107,7 +107,7 @@ ndvi <- list.files("result_subset/")
 # creating main land-use change product
 stackTime(ndvi, delta)
 ```
-<p align="center"><img width="60%" src="https://raw.githubusercontent.com/kluter/LCquickVieweR/master/img/img3.1.png></p>
+<p align="center"><img width="60%" src="https://github.com/kluter/LCquickVieweR/blob/master/img/img3.1.png"></p>
 <p align="center"><sub>Figure 3: Assembling the final product.</sub></p>
 
 ## colorCode
