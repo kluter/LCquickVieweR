@@ -69,7 +69,7 @@ Main program:
 # creating NDVIs for all downloaded data
 getNDVI(dirList)
 ```
-<p align="center"><img width="50%" src="https://raw.githubusercontent.com/kluter/LCquickVieweR/blob/master/img/img1.png"></p>
+<p align="center"><img width="50%" src="https://github.com/kluter/LCquickVieweR/blob/master/img/img1.png"></p>
 <p align="center"><sub>Figure 1: Converting all datasets into NDVI datasets.</sub></p>
 
 ``` r
@@ -89,7 +89,7 @@ allMosaics <- list.files("result_mosaic/")
 # creating subset from all mosaics
 subsetThis(allMosaics, studyArea)
 ```
-<p align="center"><img width="40%" src="https://raw.githubusercontent.com/kluter/LCquickVieweR/blob/master/img/img2.png"></p>
+<p align="center"><img width="40%" src="https://github.com/kluter/LCquickVieweR/blob/master/img/img2.png"></p>
 <p align="center"><sub>Figure 2: Merged and cropped study area.</sub></p>
 
 ``` r
@@ -107,7 +107,7 @@ ndvi <- list.files("result_subset/")
 # creating main land-use change product
 stackTime(ndvi, delta)
 ```
-<p align="center"><img width="60%" src="https://raw.githubusercontent.com/kluter/LCquickVieweR/blob/master/img/img3.1.png"></p>
+<p align="center"><img width="60%" src="https://github.com/kluter/LCquickVieweR/blob/master/img/img3.1.png></p>
 <p align="center"><sub>Figure 3: Assembling the final product.</sub></p>
 
 ## colorCode
@@ -119,5 +119,5 @@ Once the processing is done, your results will look pretty much like the scenes 
 
 In general color depends on NDVI intensity in both dates.
 
-<p align="center"><img width="50%" src="https://raw.githubusercontent.com/kluter/LCquickVieweR/blob/master/img/result2.gif"></p>
+<p align="center"><img width="50%" src="https://github.com/kluter/LCquickVieweR/blob/master/img/result2.gif"></p>
 <p align="center"><sub>Animation 2: LCquickVieweR final product.</sub></p>
