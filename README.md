@@ -7,7 +7,7 @@ This way change is coded by color. All processing steps are automatized.
 At this stage [0.0.1] some functions are customized for my latest project, but can be adjusted easily.
 `LCquickVieweR` was built during my remote sensing major at University Würzburg.
 
-<p align="center"><img width="50%" src="https://raw.githubusercontent.com/kluter/img/master/result1.gif"></p>
+<p align="center"><img width="50%" src="https://raw.githubusercontent.com/kluter/LCquickVieweR/blob/master/img/result1.gif"></p>
 <p align="center"><sub>Animation 1: LCquickVieweR final product.</sub></p>
 
 
