@@ -117,7 +117,7 @@ Once the processing is done, your results will look pretty much like the scenes 
 * cyan colors: gained areas
 * yellowish and purple areas: areas without change 
 
-In general color depends on NDVI intensity in both dates.
+In general color depends on NDVI intensity in both timesteps.
 
 <p align="center"><img width="50%" src="https://github.com/kluter/LCquickVieweR/blob/master/img/result2.gif"></p>
 <p align="center"><sub>Animation 2: LCquickVieweR final product.</sub></p>
