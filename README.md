@@ -23,11 +23,11 @@ The package is demonstrated on an agricultural region in **Egypt** (22°28'N 28�
 <tr>
 <td width="50%">
 <img width="100%" src="https://github.com/kluter/LCquickVieweR/blob/master/img/result1.gif">
-<br><sub>Animation 1: LCquickVieweR final product — Egypt study area, 1999–2018.</sub>
+<br><sub>LCquickVieweR result — Egypt study area, 1999–2018.</sub>
 </td>
 <td width="50%">
 <img width="100%" src="https://github.com/kluter/LCquickVieweR/blob/master/img/result2.gif">
-<br><sub>Animation 2: LCquickVieweR final product — Egypt study area, 1999–2018.</sub>
+<br><sub>LCquickVieweR result — Egypt study area, 1999–2018.</sub>
 </td>
 </tr>
 <tr>
