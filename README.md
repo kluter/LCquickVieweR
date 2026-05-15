@@ -21,11 +21,17 @@ The package is demonstrated on an agricultural region in **Egypt** (22°28'N 28�
 
 <table>
 <tr>
-<td width="60%">
+<td width="50%">
 <img width="100%" src="https://github.com/kluter/LCquickVieweR/blob/master/img/result1.gif">
 <br><sub>Animation 1: LCquickVieweR final product — Egypt study area, 1999–2018.</sub>
 </td>
-<td width="40%" valign="top">
+<td width="50%">
+<img width="100%" src="https://github.com/kluter/LCquickVieweR/blob/master/img/result2.gif">
+<br><sub>Animation 2: LCquickVieweR final product — Egypt study area, 1999–2018.</sub>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
 
 **Color Code**
 
@@ -40,9 +46,6 @@ Color intensity reflects NDVI magnitude in both time steps.
 </td>
 </tr>
 </table>
-
-<p align="center"><img width="50%" src="https://github.com/kluter/LCquickVieweR/blob/master/img/result2.gif"></p>
-<p align="center"><sub>Animation 2: LCquickVieweR final product — Egypt study area, 1999–2018.</sub></p>
 
 ## Installation
 Install `LCquickVieweR` directly from GitHub using `devtools`:
