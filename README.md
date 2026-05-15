@@ -30,22 +30,10 @@ The package is demonstrated on an agricultural region in **Egypt** (22°28'N 28�
 <br><sub>LCquickVieweR result — Egypt study area, 1999–2018.</sub>
 </td>
 </tr>
-<tr>
-<td colspan="2" align="center">
-
-**Color Code**
-
-| Color | Meaning |
-|---|---|
-| Cyan | Vegetation gained |
-| Reddish | Vegetation lost |
-| Yellowish / Purple | Little or no change |
-
-Color intensity reflects NDVI magnitude in both time steps.
-
-</td>
 </tr>
 </table>
+
+**Color Code:** Cyan = vegetation gained · Reddish = vegetation lost · Yellowish/Purple = little or no change. Color intensity reflects NDVI magnitude in both time steps.
 
 ## Installation
 Install `LCquickVieweR` directly from GitHub using `devtools`:
