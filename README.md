@@ -1,123 +1,112 @@
 LCquickVieweR
 ---
-The remote sensing R package `LCquickVieweR` makes land-use change visible by creating false color images. 
-The methodical approach is a combination of Image Differencing and Multi Temporal Stacking using NDVI.
-This way change is coded by color. All processing steps are automatized.
+`LCquickVieweR` is an R package that makes land-use/land-cover (LULC) change visible by producing false color composites from multi-date satellite imagery. It combines Image Differencing and Multi-Temporal NDVI Stacking to encode change as color — no manual classification required.
 
-At this stage [0.0.1] some functions are customized for my latest project, but can be adjusted easily.
-`LCquickVieweR` was built during my remote sensing major at University Würzburg.
+## Background
 
-<p align="center"><img width="50%" src="https://github.com/kluter/LCquickVieweR/blob/master/img/result1.gif"></p>
-<p align="center"><sub>Animation 1: LCquickVieweR final product.</sub></p>
+Developed as a seminar submission for the **[EAGLE MSc Program](https://eagle-science.org)**.
 
+The methodology was first applied in a BSc thesis in Physical Geography at **Goethe-Universität Frankfurt am Main**:
+
+> **Fernerkundliche Identifizierung und Analyse der Landnutzungsänderung im Umland von Taroudannt, Marokko**
+>
+> Institut für Physische Geographie · 2013  
+> Erstgutachter: Dr. Irene Marzolff
+
+That study documented large-scale LULC change driven by groundwater extraction for export-oriented fruit agriculture in the surroundings of Taroudannt, Morocco.
+
+## Study Area & Results
+
+The package is demonstrated on an agricultural region in **Egypt** (22°28'N 28°29'E), analyzed across seven consecutive periods between **1999 and 2018** using Landsat 5 and Landsat 8 imagery. The dominant pattern observed is rapid agricultural expansion sustained by groundwater extraction.
+
+<table>
+<tr>
+<td width="60%">
+<img width="100%" src="https://github.com/kluter/LCquickVieweR/blob/master/img/result1.gif">
+<br><sub>Animation 1: LCquickVieweR final product — Egypt study area, 1999–2018.</sub>
+</td>
+<td width="40%" valign="top">
+
+**Color Code**
+
+| Color | Meaning |
+|---|---|
+| Cyan | Vegetation gained |
+| Reddish | Vegetation lost |
+| Yellowish / Purple | Little or no change |
+
+Color intensity reflects NDVI magnitude in both time steps.
+
+</td>
+</tr>
+</table>
+
+<p align="center"><img width="50%" src="https://github.com/kluter/LCquickVieweR/blob/master/img/result2.gif"></p>
+<p align="center"><sub>Animation 2: LCquickVieweR final product — Egypt study area, 1999–2018.</sub></p>
 
 ## Installation
-Install `LCquickVieweR` directly from github by using `devtools`.
+Install `LCquickVieweR` directly from GitHub using `devtools`:
 ``` r
 devtools::install_github("kluter/LCquickVieweR")
 ```
 
-## Functions
-`LCquickVieweR` provides a small set of functions:
-
-Adjusting study area:
-* `mergeThis()` - [0.0.1] merges two tiles into a single image for every dataset in a committed directory. 
-Including more tiles is possible by adjusting the referenced `raster::mosaic()` function.
-* `subsetThis()` - crops every raster image in a committed directory to the extend of any shapefile.
-
-Image Differencing and Multi Temporal Stacking using NDVI:
-* `getNDVI()` - computes the NDVI for every Landsat5 and Landsat8 scene in a committed directory.
-    - `NDVI()` - basic ratio computation using Red & NIR bands, see [NDVI](https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index). 
-    - `Landsat5_NDVI()` - looks for the right Landsat5 bands for NDVI computation.
-    - `Landsat8_NDVI()` - looks for the right Landsat8 bands for NDVI computation.
-* `getDeltaNDVI()` - creates image subtractions of every successive pair within a directory. The order of subtractions is the order of the committed directory.
-    - `deltaNDVI()` - raster calculation: `deltaNDVI()` subtracts NDVI datasets from each other. The prior dataset is subtracted from the later.
-* `stackTime()` - creates the final product by stacking the prior, later, and delta datasets into their respective RGB channels.
-
-Bonus functions that make RStudio life easier:
-
-* `packageChecker()` - takes a list of packageNames and checks it against the internal library. If a package is missing, it will download, install and activate it. If a package is already installed but old, it will be updated and activated. If a package is already installed, it will be activated.
-* `set.wd()`- setting a working directory by pasting a windows path directly, without changing any single \backslash.
-    - `backslashConverter()` - converts \ into /.
-
 ## Get Started
-A quick demonstration of what `LCquickVieweR` can do:
 
-Put all your downloaded satellite images into one folder. Up to this point the automatization works only for Landsat 5 and 8 scenes. Bands from other satellites need to be addressed manually.
+Put all downloaded Landsat scenes into one folder, then:
 
-Presetting:
 ``` r
-# Load packages
+# Load dependencies
 packages <- c("raster", "sp", "RStoolbox", "rgdal")
 LCquickVieweR::packageChecker(packages)
 
-# set your working directory to your sat-image folder
+# Set working directory (paste Windows path directly)
 set.wd()
 
-# create subfolders for temporal datasets and results
-directories <- c("result_NDVIs", "result_mosaic", "result_subset", "result_deltaNDVIs", "result_falseColor")
+# Create output folders
+directories <- c("result_NDVIs", "result_mosaic", "result_subset", 
+                 "result_deltaNDVIs", "result_falseColor")
 for(i in 1:length(directories)){
   dir.create(directories[i])
-  }
-  
-# create the main list of your working directory
+}
+
 dirList <- list.files()
 ```
 
-Main program:
 ``` r
-# creating NDVIs for all downloaded data
+# Compute NDVI for all scenes
 getNDVI(dirList)
 ```
 <p align="center"><img width="50%" src="https://github.com/kluter/LCquickVieweR/blob/master/img/img1.png"></p>
 <p align="center"><sub>Figure 1: Converting all datasets into NDVI datasets.</sub></p>
 
 ``` r
-# filtering for needed tiles
+# Mosaic tiles and crop to study area
 imageTile1 <- list.files("result_NDVIs/", pattern = "177044")
 imageTile2 <- list.files("result_NDVIs/", pattern = "177045")
-
-# combining tiles for full study area
 mergeThis(imageTile1, imageTile2)
 
-#--------------------------------------------------------------------------------#
-# loading extent of study area -> shp-file
 studyArea <- readOGR(dsn = "_vector_data", layer = "studyArea")
-# addressing all merged images
 allMosaics <- list.files("result_mosaic/")
-
-# creating subset from all mosaics
 subsetThis(allMosaics, studyArea)
 ```
 <p align="center"><img width="40%" src="https://github.com/kluter/LCquickVieweR/blob/master/img/img2.png"></p>
 <p align="center"><sub>Figure 2: Merged and cropped study area.</sub></p>
 
 ``` r
-# getting all subsets into a list
+# Compute delta NDVI and build final composite
 allSubsets <- list.files("result_subset/")
-
-# image differencing deltaNDVI()
 getDeltaNDVI(allSubsets)
 
-#--------------------------------------------------------------------------------#
-# collecting preprocessed datasets for final product
 delta <- list.files("result_deltaNDVIs/")
-ndvi <- list.files("result_subset/")
-
-# creating main land-use change product
+ndvi  <- list.files("result_subset/")
 stackTime(ndvi, delta)
 ```
 <p align="center"><img width="60%" src="https://github.com/kluter/LCquickVieweR/blob/master/img/img3.1.png"></p>
-<p align="center"><sub>Figure 3: Assembling the final product.</sub></p>
+<p align="center"><sub>Figure 3: Assembling the final composite.</sub></p>
 
-## colorCode
-Once the processing is done, your results will look pretty much like the scenes in the GIFs. Regardless of where that scene is from, the colorCode will still be the same:
+## Note
 
-* reddish colors: lost areas
-* cyan colors: gained areas
-* yellowish and purple areas: areas without change 
-
-In general color depends on NDVI intensity in both timesteps.
-
-<p align="center"><img width="50%" src="https://github.com/kluter/LCquickVieweR/blob/master/img/result2.gif"></p>
-<p align="center"><sub>Animation 2: LCquickVieweR final product.</sub></p>
+Written in 2018 for Landsat 5 and 8. The R libraries used (`raster`, `rgdal`, 
+`sp`) have since been largely superseded by `terra` and `sf`. The same 
+workflow today would more likely be implemented in Python using `rasterio`, 
+`xarray`, or `stackstac`.
