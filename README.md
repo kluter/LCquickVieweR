@@ -8,10 +8,8 @@ Developed as a seminar submission for the **[EAGLE MSc Program](https://eagle-sc
 
 The methodology was first applied in a BSc thesis in Physical Geography at **Goethe-Universität Frankfurt am Main**:
 
-> **Fernerkundliche Identifizierung und Analyse der Landnutzungsänderung im Umland von Taroudannt, Marokko**
->
-> Institut für Physische Geographie · 2013  
-> Erstgutachter: Dr. Irene Marzolff
+> Kluter, P., 2013. Fernerkundliche Identifizierung und Analyse der Landnutzungsänderung im Umland von Taroudannt, Marokko. 
+> Bachelor's thesis. Goethe-Universität Frankfurt am Main: Institut für Physische Geographie.
 
 That study documented large-scale LULC change driven by groundwater extraction for export-oriented fruit agriculture in the surroundings of Taroudannt, Morocco.
 
