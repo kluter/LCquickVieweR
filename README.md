@@ -15,7 +15,7 @@ That study documented large-scale LULC change driven by groundwater extraction f
 
 ## Study Area & Results
 
-The package is demonstrated on an agricultural region in **Egypt** (22°28'N 28°29'E), analyzed across seven consecutive periods between **1999 and 2018** using Landsat 5 and Landsat 8 imagery. The dominant pattern observed is rapid agricultural expansion sustained by groundwater extraction.
+The package is demonstrated on an agricultural region in **Egypt** ([22°28'N 28°29'E](https://www.google.com/maps/@22.4626369,28.5251471,136277m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D)), analyzed across seven consecutive periods between **1999 and 2018** using Landsat 5 and Landsat 8 imagery. The dominant pattern observed is rapid agricultural expansion sustained by groundwater extraction.
 
 <table>
 <tr>
